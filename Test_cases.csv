@@ -1,0 +1,15 @@
+Test Case Id,Scenario,Test Cases,Input,Expected Output
+1,Verification of users,1. Valid Username and Valid Password,"U1 , P1",Start the game
+,,2. Valid Username and Invalid Password,"U1, random_password",Ask for correct Username and Password
+,,3. Invalid Username,random_username,Ask for correct Username 
+,,4. Add Username and Password,"NU1 , NP1",Add to CSV
+,,,,
+2,Track attempts of User,1.Tracking attemps of a user,The file(CSV) containing Username and Password,
+,,2. Writing in database to corresponding user,Tracked attempts,Writing in database
+,,,,
+3,During Game,1. Game Initialization,,Ask player to move
+,,2. Randomly choosing puzzle,ARRAY,Returns MATRIX list
+,,2.Check solvability of puzzle,"MATRIX ,  updated MATRIX ",reversibility
+,,3. Validity of move,"Input string (W for Up,   S for Down ,  A for Left ,  D for Right) ",Change screen and print 
+,,4. Winning the Game,Solvability () = 0     and     MATRIX[8] = “  “,Print “You Won”
+,,5. Tracking Moves,MOVES_M,Print number of moves
